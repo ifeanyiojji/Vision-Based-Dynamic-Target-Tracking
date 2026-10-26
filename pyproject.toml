@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mobileaerial-tracking"
+version = "0.1.0"
+description = "Vision-based dynamic target tracking and image-based visual servoing demo"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26,<3",
+    "opencv-contrib-python>=4.10,<5",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
